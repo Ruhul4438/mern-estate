@@ -186,8 +186,8 @@ export default function Search() {
 
           <div className='flex items-center gap-2'>
             <label className='font-semibold' defaultValue={'createdAt_desc'}>Sort:</label>
-            <select id='sort_order' className='border rounded-lg p-3'>
-              <option>Price high to low</option>
+            <select onChange={handleChange} id='sort_order' className='border rounded-lg p-3'>
+              {/* <option>Price high to low</option> */}
               <option value='regularPrice_desc'>Price high to low</option>
               <option value='regularPrice_asc'>Price low to hight</option>
               <option value='createdAt_desc'>Latest</option>
